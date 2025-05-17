@@ -1,0 +1,93 @@
+# GarbWeeksLabo サイト作成作業まとめ
+
+## 1. 初期設定と基本構造の作成
+
+1. 基本的なHTMLファイル（index.html）の作成
+   - レスポンシブデザイン対応
+   - 必要なセクション（ホーム、概要、機能、お問い合わせ）の追加
+   - Font Awesome導入
+
+2. スタイルシート（styles.css）の作成
+   - モダンなデザイン
+   - レスポンシブ対応のグリッドレイアウト
+   - アニメーション効果
+
+3. JavaScript（script.js）の作成
+   - スムーズスクロール機能
+   - スクロール時のヘッダー表示/非表示
+   - イベントリスナー
+
+4. サイト全体の基本デザイン
+   - カラースキーム: #007AFF（メインカラー）
+   - シンプルでクリーンなデザイン
+
+## 2. GitHubに公開
+
+1. Gitリポジトリの初期化
+   ```
+   git init
+   git add .
+   git commit -m "初期コミット：iOSアプリ開発者サイトの作成"
+   ```
+
+2. GitHubリポジトリの設定
+   ```
+   git remote add origin https://github.com/t7krbtmch/garbweeks.git
+   git push -u origin main
+   ```
+
+3. GitHub Pagesの有効化
+   - 設定画面から「Pages」を選択
+   - ブランチを「main」に設定
+   - 公開URL: https://t7krbtmch.github.io/garbweeks/
+
+## 3. お問い合わせフォームの実装
+
+1. 初期実装: Formspree
+   - フォームからメール送信機能の試み
+   - 動作に問題があり、別の方法を検討
+
+2. mailtoリンクへの変更
+   - シンプルなメールリンクを実装
+   - デザインの調整
+   - メールアドレス: garbweeks0@gmail.com
+
+## 4. アプリ一覧セクションの追加
+
+1. アプリ一覧セクションの構造作成
+   - アプリカードのデザイン
+   - グリッドレイアウト
+
+2. 「世界史人物辞典」アプリの追加
+   - App Storeへのリンク設定
+   - アイコン画像の追加
+   - クリック可能なアイコン（App Storeへ遷移）
+
+3. スタイルの調整
+   - カード内のレイアウト改善
+   - ホバーエフェクト追加
+
+## 5. 広告設定ファイルの追加
+
+1. app-ads.txtの追加
+   ```
+   google.com, pub-9987792305769383, DIRECT, f08c47fec0942fa0
+   ```
+
+2. アクセスURL
+   - https://t7krbtmch.github.io/garbweeks/app-ads.txt
+
+## 6. 追加機能と今後の拡張性
+
+1. 新アプリの追加方法
+   - アイコン画像をimagesフォルダに追加
+   - app-cardテンプレートを使用して一覧に追加
+
+2. サイト全体のカスタマイズ
+   - カラースキームの変更は styles.css で可能
+   - 新セクションの追加は index.html と styles.css の編集で可能
+
+## 最終URL
+
+- サイトURL: https://t7krbtmch.github.io/garbweeks/
+- リポジトリ: https://github.com/t7krbtmch/garbweeks 
