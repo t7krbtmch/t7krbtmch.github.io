@@ -25,7 +25,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 5%;
+    padding: 0.8rem 5%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -60,7 +60,7 @@ nav ul li a:hover {
 .about {
     padding: 3rem 1rem;
     background-color: #f8f9fa;
-    margin-top: 70px; /* ヘッダーの高さ分のマージンを追加 */
+    margin-top: 120px; /* さらにマージンを増やす（100pxから120pxに） */
 }
 
 .about h2 {
@@ -242,11 +242,15 @@ footer {
     }
 
     nav ul {
-        margin-top: 1rem;
+        margin-top: 0.5rem; /* 1remから0.5remに変更 */
     }
 
     nav ul li {
         margin: 0 1rem;
+    }
+    
+    .about {
+        margin-top: 140px; /* モバイル表示時はさらにマージンを増やす */
     }
 
     .about-content {
