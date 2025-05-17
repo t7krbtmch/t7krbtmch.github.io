@@ -348,4 +348,125 @@ footer {
 .email-link:hover {
     background-color: #0056b3;
     transform: translateY(-3px);
+}
+
+/* アプリ一覧セクション */
+.apps {
+    padding: 5rem 1rem;
+    background-color: #f8f9fa;
+}
+
+.apps h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+.apps-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.app-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.app-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.app-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    margin: 1.5rem auto;
+    display: block;
+    object-fit: cover;
+}
+
+.app-card h3 {
+    text-align: center;
+    margin: 0.5rem 0;
+    font-size: 1.3rem;
+}
+
+.app-card p {
+    padding: 0 1.5rem;
+    text-align: center;
+    color: #666;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.app-link {
+    display: block;
+    text-align: center;
+    padding: 0.8rem;
+    background-color: #007AFF;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.app-link:hover {
+    background-color: #0056b3;
+}
+
+.app-screenshot {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* アプリカード用の追加スタイル */
+.app-badges {
+    display: flex;
+    gap: 0.5rem;
+    margin: 0.5rem 0 1rem;
+    justify-content: center;
+}
+
+.app-badge {
+    background-color: #e9f5ff;
+    color: #007AFF;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.app-features {
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.app-feature {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.app-feature i {
+    color: #007AFF;
+}
+
+.app-feature span {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.app-card p {
+    margin-bottom: 0.5rem;
 } 
