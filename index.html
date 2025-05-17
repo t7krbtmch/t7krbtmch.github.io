@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iOSアプリ開発者サイト</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">DevSite</div>
+            <ul>
+                <li><a href="#home">ホーム</a></li>
+                <li><a href="#about">概要</a></li>
+                <li><a href="#features">機能</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>iOSアプリ開発</h1>
+                <p>革新的なアイデアを、美しいアプリケーションに</p>
+                <a href="#contact" class="cta-button">お問い合わせ</a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>概要</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>私たちは、ユーザー体験を最重視したiOSアプリケーションの開発を行っています。</p>
+                    <p>SwiftとSwiftUIを活用し、最新の技術を駆使して高品質なアプリケーションを提供します。</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/app-dev.png" alt="アプリ開発イメージ">
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <h2>主な機能</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>ネイティブ開発</h3>
+                    <p>Swiftを使用した最適化されたネイティブアプリ開発</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>UI/UXデザイン</h3>
+                    <p>ユーザーフレンドリーなインターフェース設計</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-code"></i>
+                    <h3>最新技術</h3>
+                    <p>SwiftUI、Combine等の最新フレームワークの活用</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>お問い合わせ</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">お名前</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">メールアドレス</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">メッセージ</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">送信</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>&copy; 2024 iOSアプリ開発者サイト. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
