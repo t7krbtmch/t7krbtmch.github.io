@@ -319,4 +319,10 @@ footer {
 .form-container iframe {
     border: none;
     border-radius: 5px;
+}
+
+#submit-status {
+    margin: 1rem 0;
+    text-align: center;
+    font-weight: 500;
 } 

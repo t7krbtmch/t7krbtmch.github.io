@@ -12,6 +12,37 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// EmailJSを使用したメール送信機能
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // 送信ボタンの無効化と読み込み状態の表示
+    const submitButton = document.querySelector('.submit-button');
+    const submitStatus = document.getElementById('submit-status');
+    
+    submitButton.disabled = true;
+    submitButton.textContent = '送信中...';
+    submitStatus.textContent = '';
+    
+    // EmailJSでメール送信
+    emailjs.sendForm('service_id', 'template_id', this)
+        .then(function() {
+            // 成功時の処理
+            submitButton.disabled = false;
+            submitButton.textContent = '送信';
+            submitStatus.textContent = 'メッセージが送信されました。ありがとうございます！';
+            submitStatus.style.color = 'green';
+            e.target.reset();
+        }, function(error) {
+            // エラー時の処理
+            submitButton.disabled = false;
+            submitButton.textContent = '送信';
+            submitStatus.textContent = 'エラーが発生しました。後でもう一度お試しください。';
+            submitStatus.style.color = 'red';
+            console.log('送信エラー:', error);
+        });
+});
+
 // スクロール時のヘッダーの表示/非表示
 let lastScrollTop = 0;
 const header = document.querySelector('header');
@@ -28,21 +59,4 @@ window.addEventListener('scroll', () => {
     }
     
     lastScrollTop = scrollTop;
-});
-
-// メール送信機能
-function sendEmail(event) {
-    event.preventDefault();
-    
-    const name = encodeURIComponent(document.getElementById('name').value);
-    const email = encodeURIComponent(document.getElementById('email').value);
-    const message = encodeURIComponent(document.getElementById('message').value);
-    
-    const subject = encodeURIComponent('ウェブサイトからのお問い合わせ');
-    const body = encodeURIComponent(`お名前: ${name}\n\n返信用メールアドレス: ${email}\n\nメッセージ:\n${message}`);
-    
-    const mailtoLink = `mailto:t7krbtmch@gmail.com?subject=${subject}&body=${body}`;
-    
-    window.location.href = mailtoLink;
-    return false;
-} 
+}); 
