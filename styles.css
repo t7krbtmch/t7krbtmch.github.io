@@ -58,7 +58,7 @@ nav ul li a:hover {
 
 /* ヒーローセクション */
 .hero {
-    height: 10vh;
+    height: 70vh;
     background: linear-gradient(135deg, #007AFF, #00C6FF);
     display: flex;
     align-items: center;
@@ -99,13 +99,13 @@ nav ul li a:hover {
 
 /* 概要セクション */
 .about {
-    padding: 5rem 1rem;
+    padding: 3rem 1rem;
     background-color: #f8f9fa;
 }
 
 .about h2 {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     font-size: 2.5rem;
 }
 
@@ -114,7 +114,7 @@ nav ul li a:hover {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    gap: 2rem;
     align-items: center;
 }
 
@@ -131,12 +131,12 @@ nav ul li a:hover {
 
 /* 機能セクション */
 .features {
-    padding: 5rem 1rem;
+    padding: 3rem 1rem;
 }
 
 .features h2 {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     font-size: 2.5rem;
 }
 
@@ -173,13 +173,13 @@ nav ul li a:hover {
 
 /* お問い合わせセクション */
 .contact {
-    padding: 5rem 1rem;
+    padding: 3rem 1rem;
     background-color: #f8f9fa;
 }
 
 .contact h2 {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     font-size: 2.5rem;
 }
 
@@ -352,13 +352,13 @@ footer {
 
 /* アプリ一覧セクション */
 .apps {
-    padding: 5rem 1rem;
+    padding: 3rem 1rem;
     background-color: #f8f9fa;
 }
 
 .apps h2 {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     font-size: 2.5rem;
 }
 
