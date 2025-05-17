@@ -14,24 +14,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // フォーム送信処理
 document.getElementById('contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // フォームデータの取得
-    const formData = {
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        message: document.getElementById('message').value
-    };
-
-    // ここでフォームデータの処理を行う
-    // 例: APIへの送信やメール送信など
-    console.log('送信されたデータ:', formData);
-
-    // 送信完了メッセージ
-    alert('お問い合わせありがとうございます。\n内容を確認次第、ご連絡させていただきます。');
-    
-    // フォームのリセット
-    this.reset();
+    // Formspreeが処理するので、デフォルトの処理はそのまま
+    // 送信完了メッセージはFormspreeのリダイレクトページで表示されます
 });
 
 // スクロール時のヘッダーの表示/非表示
