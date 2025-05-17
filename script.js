@@ -28,4 +28,18 @@ window.addEventListener('scroll', () => {
     }
     
     lastScrollTop = scrollTop;
-}); 
+});
+
+// メール送信機能
+function sendEmail(event) {
+    event.preventDefault();
+    
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    
+    const mailtoLink = `mailto:t7krbtmch@gmail.com?subject=ウェブサイトからのお問い合わせ&body=お名前: ${name}%0D%0A%0D%0A返信用メールアドレス: ${email}%0D%0A%0D%0Aメッセージ:%0D%0A${message}`;
+    
+    window.location.href = mailtoLink;
+    return false;
+} 
