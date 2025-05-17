@@ -34,11 +34,14 @@ window.addEventListener('scroll', () => {
 function sendEmail(event) {
     event.preventDefault();
     
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
+    const name = encodeURIComponent(document.getElementById('name').value);
+    const email = encodeURIComponent(document.getElementById('email').value);
+    const message = encodeURIComponent(document.getElementById('message').value);
     
-    const mailtoLink = `mailto:t7krbtmch@gmail.com?subject=ウェブサイトからのお問い合わせ&body=お名前: ${name}%0D%0A%0D%0A返信用メールアドレス: ${email}%0D%0A%0D%0Aメッセージ:%0D%0A${message}`;
+    const subject = encodeURIComponent('ウェブサイトからのお問い合わせ');
+    const body = encodeURIComponent(`お名前: ${name}\n\n返信用メールアドレス: ${email}\n\nメッセージ:\n${message}`);
+    
+    const mailtoLink = `mailto:t7krbtmch@gmail.com?subject=${subject}&body=${body}`;
     
     window.location.href = mailtoLink;
     return false;
