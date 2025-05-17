@@ -58,7 +58,7 @@ nav ul li a:hover {
 
 /* ヒーローセクション */
 .hero {
-    height: 100vh;
+    height: 30vh;
     background: linear-gradient(135deg, #007AFF, #00C6FF);
     display: flex;
     align-items: center;
