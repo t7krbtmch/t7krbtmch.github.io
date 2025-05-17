@@ -56,52 +56,11 @@ nav ul li a:hover {
     color: #007AFF;
 }
 
-/* ヒーローセクション */
-.hero {
-    height: 40vh;
-    background: linear-gradient(135deg, #007AFF, #00C6FF);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    padding: 0 1rem;
-}
-
-.hero-content {
-    max-width: 800px;
-    padding: 2rem 0;
-}
-
-.hero h1 {
-    font-size: 2.8rem;
-    margin-bottom: 0.5rem;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 1rem 2rem;
-    background-color: white;
-    color: #007AFF;
-    text-decoration: none;
-    border-radius: 30px;
-    font-weight: bold;
-    transition: transform 0.3s ease;
-}
-
-.cta-button:hover {
-    transform: translateY(-3px);
-}
-
 /* 概要セクション */
 .about {
     padding: 3rem 1rem;
     background-color: #f8f9fa;
+    margin-top: 70px; /* ヘッダーの高さ分のマージンを追加 */
 }
 
 .about h2 {
@@ -288,14 +247,6 @@ footer {
 
     nav ul li {
         margin: 0 1rem;
-    }
-
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero p {
-        font-size: 1.2rem;
     }
 
     .about-content {
