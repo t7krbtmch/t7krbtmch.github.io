@@ -17,7 +17,7 @@ contextweb.com, 562791, RESELLER, 89ff185a4c4e857c
 video.unrulymedia.com, 123476257, RESELLER
 lijit.com, 465542, RESELLER, fafdf38b16bf6b2b
 improvedigital.com, 2276, RESELLER
-Media.net, 8CUO7P3WK, RESELLER
+media.net, 8CUO7P3WK, RESELLER
 onetag.com, 5d49f482552c9b6, RESELLER
 ushareit.com, LC7dc692567a127a57, RESELLER
 lacunads.com, LC7dc692567a127a57, RESELLER
@@ -245,9 +245,9 @@ contextweb.com, 561998, RESELLER, 89ff185a4c4e857c
 pubmatic.com, 158100, RESELLER, 5d62403b186f2ace
 
 vungle.com,685a9ece892f9d0011d65c8d,DIRECT,c107d686becd2d77
-Contextweb.com,562852,RESELLER,89ff185a4c4e857c
-Media.net,8CU12AQ1Y,RESELLER
-Media.net,8CU9B72O6,RESELLER
+contextweb.com,562852,RESELLER,89ff185a4c4e857c
+media.net,8CU12AQ1Y,RESELLER
+media.net,8CU9B72O6,RESELLER
 acexchange.co.kr,1317287336,RESELLER
 acexchange.co.kr,1854269911,RESELLER
 adagio.io,1522,RESELLER
@@ -733,4 +733,3 @@ zmaticoo.com,114490,RESELLER
 zmaticoo.com,5135063,RESELLER
 zmaticoo.com,5135224,RESELLER
 zoomd.com,88478941,RESELLER
-google.com, pub-9987792305769383, DIRECT, f08c47fec0942fa0
